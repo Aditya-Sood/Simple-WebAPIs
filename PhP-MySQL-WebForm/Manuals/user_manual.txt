@@ -1,0 +1,33 @@
+====================================================================================================
+'VISITING CARDS' FORM USER MANUAL
+====================================================================================================
+Project Created By: ADITYA SOOD (CSE DD 2020)
+Date: 08-04-2018
+
+
+#####
+PROJECT GOAL:
+-> Provide the user two simple forms: 
+	1) For entering person details, and
+	2) For requesting generation of PDF of visiting cards.
+
+-> Output is in PDF form for correct input, and a redirecting page otherwise.
+#####
+
+
+#####
+HOW TO USE THE FORM:
+1) Enter the required person details into the text fields displayed on your screen.
+
+2) Click on the 'Submit' button to submit values, 'Reset' button to clear the fields.
+
+3) You'll either obtain:
+	i)	A webpage displaying general messages and asking whether more input is to be entered or print PDF.
+	ii)	A webpage displaying the errors in the input, with a 'Try Again' button for re-directing to the input form.
+
+4) Clicking on button 'Get PDF' will redirect you to another form for entering name of the person whose visiting card is to be generated.
+
+5) You'll either obtain:
+	i)	A PDF file displaying the required PDF of visiting cards, or
+	ii)	A webpage displaying the errors in the input, with a 'Try Again' button for re-directing to the input form.	
+#####	

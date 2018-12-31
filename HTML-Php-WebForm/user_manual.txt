@@ -1,0 +1,33 @@
+====================================================================================================
+'NUMBER OPERATIONS' FORM USER MANUAL
+====================================================================================================
+Project Created By: ADITYA SOOD (CSE DD 2020)
+Date: 17-02-2018
+
+
+#####
+PROJECT GOAL:
+-> Provide the user a simple form for processing EVEN INTEGERS.
+-> Output is in PDF form for correct input, and a redirecting page otherwise.
+#####
+
+
+#####
+HOW TO USE THE FORM:
+1) Enter the required even integers into the text field displayed at the top of your screen.
+
+2) Select the operations to be performed on the input:
+	-> Sort (Ascending Order)
+	-> Sort (Descending Order)
+	-> Find Maximum
+	-> Find Minimum
+	-> Find Range (**NEW**)
+	-> Find Mean Value (**NEW**)
+	-> Find Total Count
+
+3) Click on the 'Submit' button to submit values, 'Reset' button to clear the fields.
+
+4) You'll either obtain:
+	i)	A PDF file displaying the required output for correct input, or
+	ii)	A webpage displaying the errors in the input, with a 'Try Again' button for re-directing to the input form.
+#####	

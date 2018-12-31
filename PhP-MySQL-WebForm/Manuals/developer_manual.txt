@@ -1,0 +1,76 @@
+====================================================================================================
+'VISITING CARDS' FORM DEVELOPER MANUAL
+====================================================================================================
+Project Created By: ADITYA SOOD (CSE DD 2020)
+Date: 08-04-2018
+
+
+#####
+CONTENTS:
+1) Project Goal
+2) Details $ Instructions
+3) Code Workflow
+4) FAQ
+5) Contact Details
+#####
+
+
+
+#####
+1) PROJECT GOAL:
+-> Provide the user two simple forms: 
+	1) For entering person details, and
+	2) For requesting generation of PDF of visiting cards.
+
+-> Output is in PDF form for correct input, and a redirecting page otherwise.
+#####
+
+
+
+#####
+2) DETAILS $ INSTRUCTIONS:
+* This project is a mix of HTML and PhP
+
+* An HTML form is provided to the user for entering the data and selecting the various operations to be performed.
+
+* A PhP script processes the input of the user.
+	-> Once the input is validated, the required output is displayed as a PDF.
+	-> Otherwise, for erroneous input, a webpage specifying the errors and a redirecting button is displayed.
+
+* This project uses an external library: FPDF Library (http://www.fpdf.org/)
+	-> Used for displaying the processed output as a PDF
+	-> Manual for the library: (http://www.fpdf.org/en/doc/index.php)
+	-> The 'fpdf.php' file and 'font' folder must be saved at (\xampp\php\pear) for the library to work.
+
+* The project consists of four files:
+	i) 	myform.html - The HTML form displayed for taking user input of details.
+	ii)	myproc.php - The PhP file for validating and processing the form input of details.
+	iii)print.html - The HTML form displayed for requesting generation of visiting cards PDF.
+	iv) printproc.php - The PhP file for generation of visiting cards PDF.
+
+* All files which are part of the project must be saved at (\xampp\htdocs) to be accessible on the server.
+#####
+
+
+
+#####
+3) CODE WORKFLOW:
+* The project files ('myform.html', 'processor.php', 'print.html' & 'printproc.php') have been completely documented
+	-> Use of each portion of the code is explained along side as comments
+	-> Workflow explained in the comments
+
+* PDF Output is independent of the the class representing the user input form
+	-> Code is modular for displaying output in Excel form if the need be, by replacing the relevant code OUTSIDE the class.
+#####
+
+
+
+#####
+4) FAQ:
+* The most frequent error which may be encountered is: "FPDF error: Some data has already been output, can't send PDF"
+	-> It occurs whenever some output (through echo or print functions) has been sent in the program before.
+	-> When a PDF file is to be sent, then NO OUTPUT CAN BE SENT OTHER THAN THE PDF FILE for the entire program's duration.
+	-> Check for an unintentional call to echo or print function in the program.
+
+* The PDO object requires correct login details for execution of SQL statements and queries. Failure to do so will lead to ignored requests to the database.	
+#####

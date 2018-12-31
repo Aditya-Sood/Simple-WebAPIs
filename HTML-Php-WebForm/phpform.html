@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+	<TITLE>Number Operations</TITLE>
+</HEAD>
+
+<BODY>
+	<!-- Use form element for taking the user input -->
+	<FORM action="processor.php" method="post">
+
+		<!-- Use fieldset element for generating a boundary around the input area of the screen -->
+		<fieldset>
+
+			<!-- Title for the boundary -->
+			<legend>Number Operations:</legend>
+
+			<!-- Text field for user inut -->
+			Enter the numbers (space separated):<br>
+			<input type="text" name="numbers"><br>
+			<br>
+
+			<!-- Set of available operations -->
+			Operations:<br>
+
+			<!-- Hidden type 'input' element for sending a 'no' output for unchecked operations -->
+			<!-- Checkbox type 'input' element for sending a 'yes' output for checked operations -->
+
+			<input type="hidden" name="sortascen" value="n">
+			<input type="checkbox" name="sortascen" value="y"> Sort (Ascending Order)<br>
+			
+			<input type="hidden" name="sortdescen" value="n">
+			<input type="checkbox" name="sortdescen" value="y"> Sort (Descending Order)<br>
+			
+			<input type="hidden" name="max" value="n">
+			<input type="checkbox" name="max" value="y"> Find Maximum<br>
+			
+			<input type="hidden" name="min" value="n">
+			<input type="checkbox" name="min" value="y"> Find Minimum<br>
+
+			<input type="hidden" name="range" value="n">
+			<input type="checkbox" name="range" value="y"> Find Range<br>
+
+			<input type="hidden" name="mean" value="n">
+			<input type="checkbox" name="mean" value="y"> Find Mean Value<br>
+			
+			<input type="hidden" name="count" value="n">
+			<input type="checkbox" name="count" value="y"> Find Total Count<br>
+			<br>
+
+			<!-- Submit input button -->
+			<input type="submit" name="Submit">
+			<!-- Reset form fields button -->
+			<input type="reset" name="Reset">
+
+		</fieldset>
+
+	</FORM>
+	
+</BODY>
+
+</HTML>

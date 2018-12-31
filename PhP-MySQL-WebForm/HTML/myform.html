@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Visiting Card Form</title>
+</head>
+<body>
+
+	<fieldset>
+		<legend>Enter Details:</legend>
+
+		<form action="myproc.php" method="post" name="vis">
+			Name:<br>
+			<input type="text" name="name" required> <br>
+			<br>
+			Designation:<br>
+			<input type="text" name="desg" required> <br>
+			<br>
+			Gender:<br>
+			<input type="radio" name="gender" value="M" required> Male <br>
+			<input type="radio" name="gender" value="F" required> Female <br>
+			<br>
+			Office Address (FOR MALE EMPLOYEES ONLY):
+			<br>
+			<input type="text" name="office">
+			<br>
+			<br>
+			Residence Address (FOR FEMALE EMPLOYEES ONLY):
+			<br>
+			<input type="text" name="resd">
+			<br>
+			<br>
+			Contact Number 1 (REQUIRED): 
+			<input type="number" name="con1" min="1000000000" max="9999999999" required> <br><br>
+			Contact Number 2 (Optional): 
+			<input type="number" name="con2" min="1000000000" max="9999999999"> <br><br>
+			Contact Number 3 (Optional): 
+			<input type="number" name="con3" min="1000000000" max="9999999999"> <br><br>
+			Contact Number 4 (Optional): 
+			<input type="number" name="con4" min="1000000000" max="9999999999"> <br><br>
+			Contact Number 5 (Optional): 
+			<input type="number" name="con5" min="1000000000" max="9999999999"> <br><br>
+
+			Email-id 1 (REQUIRED): 
+			<input type="email" name="email1" required> <br><br>
+			Email-id 2 (Optional): 
+			<input type="email" name="email2"> <br><br>
+
+			Company Logo:<br>
+			<input type="file" name="logo" accept="image/*"> <br><br>
+
+			Company Picture:<br>
+			<input type="file" name="pic" accept="image/*"> <br><br>			
+
+			<br><br>
+			<input type="submit" name="Submit">
+			<input type="reset" name="Reset Form">
+
+		</form>
+
+	</fieldset>
+
+</body>
+</html>

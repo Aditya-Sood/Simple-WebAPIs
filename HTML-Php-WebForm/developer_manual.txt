@@ -1,0 +1,69 @@
+====================================================================================================
+'NUMBER OPERATIONS' FORM DEVELOPER MANUAL
+====================================================================================================
+Project Created By: ADITYA SOOD (CSE DD 2020)
+Date: 17-02-2018
+
+
+#####
+CONTENTS:
+1) Project Goal
+2) Details $ Instructions
+3) Code Workflow
+4) FAQ
+5) Contact Details
+#####
+
+
+
+#####
+1) PROJECT GOAL:
+-> Provide the user a simple form for processing even integers.
+-> Output is in PDF form for correct input, and a redirecting page otherwise.
+#####
+
+
+
+#####
+2) DETAILS $ INSTRUCTIONS:
+* This project is a mix of HTML and PhP
+
+* An HTML form is provided to the user for entering the data and selecting the various operations to be performed.
+
+* A PhP script processes the input of the user.
+	-> Once the input is validated, the required output is displayed as a PDF.
+	-> Otherwise, for erroneous input, a webpage specifying the errors and a redirecting button is displayed.
+
+* This project uses an external library: FPDF Library (http://www.fpdf.org/)
+	-> Used for displaying the processed output as a PDF
+	-> Manual for the library: (http://www.fpdf.org/en/doc/index.php)
+	-> The 'fpdf.php' file and 'font' folder must be saved at (\xampp\php\pear) for the library to work.
+
+* The project consists of two files:
+	i) 	phpform.html - The HTML form displayed for taking user input.
+	ii)	processor.php - The PhP file for validating and processing the form input.
+
+* All files which are part of the project must be saved at (\xampp\htdocs) to be accessible on the server.
+#####
+
+
+
+#####
+3) CODE WORKFLOW:
+* Both the project files ('phpform.html' & 'processor.php') have been completely documented
+	-> Use of each portion of the code is explained along side as comments
+	-> Workflow explained in the comments
+
+* PDF Output is independent of the the class representing the user input form
+	-> Code is modular for displaying output in Excel form if the need be, by replacing the relevant code OUTSIDE the class.
+#####
+
+
+
+#####
+4) FAQ:
+* The most frequent error which may be encountered is: "FPDF error: Some data has already been output, can't send PDF"
+	-> It occurs whenever some output (through echo or print functions) has been sent in the program before.
+	-> When a PDF file is to be sent, then NO OUTPUT CAN BE SENT OTHER THAN THE PDF FILE for the entire program's duration.
+	-> Check for an unintentional call to echo or print function in the program.
+#####
